@@ -1,0 +1,80 @@
+.pirma-dalis {
+    display: flex;
+    flex-direction: row;
+}
+
+.antra-dalis {
+    display: flex;
+    flex-direction: row;
+}
+
+.anime {
+    position: fixed;
+  
+}
+
+
+.pirmas {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid pink;
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+}
+
+.antras {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid pink;
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+}
+
+
+.trecias {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid pink;
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+}
+
+
+.ketvirtas {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid pink;
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+}
+
+@keyframes loading {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: {
+            yellow
+        };
+    }
+}
