@@ -1,33 +1,9 @@
-.pirma-dalis {
-    display: flex;
-    flex-direction: row;
-}
-
-.antra-dalis {
-    display: flex;
-    flex-direction: row;
-}
-
 .anime {
     position: fixed;
-  
 }
 
 
 .pirmas {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border: 1px solid pink;
-    border-radius: 50%;
-    animation-name: loading;
-    animation-duration: 5s;
-    animation-iteration-count: 10;
-}
-
-.antras {
-    width: 50px;
-    height: 50px;
     background-color: white;
     border: 1px solid pink;
     border-radius: 50%;
@@ -37,28 +13,44 @@
 }
 
 
-.trecias {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border: 1px solid pink;
-    border-radius: 50%;
+.virsus {
+    display: flex;
+    position: fixed;
+    height: 30px;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: aqua;
+
+}
+
+.virsus > div {
+    height: 100%;
+    width: 100%;
     animation-name: loading;
     animation-duration: 5s;
-    animation-iteration-count: 10;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
 }
 
 
-.ketvirtas {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border: 1px solid pink;
-    border-radius: 50%;
-    animation-name: loading;
-    animation-duration: 5s;
-    animation-iteration-count: 10;
+.virsus > div:nth-child(4n + 1) {
+    animation-delay: -1.25s;
 }
+
+.virsus>div:nth-child(4n + 2) {
+    animation-delay: -2.5s;
+}
+
+.virsus>div:nth-child(4n + 3) {
+    animation-delay: -3.75s;
+}
+
+.virsus>div:nth-child(4n) {
+    animation-delay: -5s;
+}
+
+
 
 @keyframes loading {
     0% {
@@ -72,9 +64,11 @@
         background-color: blue;
     }
 
-    100% {
-        background-color: {
-            yellow
-        };
+    75% {
+        background-color: yellow
+       
     }
-}
+    100% {
+        background-color: red;
+    }
+    
